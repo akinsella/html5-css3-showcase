@@ -53,6 +53,10 @@ pre {
     overflow: auto;
 }
 
+.load-indicator-wrapper-container {
+    position: relative;
+    height: 120px;
+}
 
 .load-indicator-wrapper {
     position: absolute;
@@ -75,7 +79,6 @@ pre {
     margin: 20px;
     width: 40px;
     height: 40px;
-
 
     background: transparent url(../../image/activity-indicator.png) no-repeat 0 0;
     background-size: 40px 480px;
