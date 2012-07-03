@@ -34,7 +34,25 @@ function initRouter() {
             $('#styles').attr('href', 'pages/' + page + '/styles.css');
 
             setTimeout(function() { prettyPrint(); }, 100);
+        },
+        '/css3-sprites': function() {
+            var page = 'css3-sprites';
+            $.ajax({
+                url: 'pages/' + page + '/index.html',
+                cache: false,
+                dataType: 'html',
+                success: function(data) {
+                    var html = $('<html />').html(data);
+                    var content = $(html).find('#content');
+                    $('#detail').html(content);
+                }
+            });
+
+            $('#styles').attr('href', 'pages/' + page + '/styles.css');
+
+            setTimeout(function() { prettyPrint(); }, 250);
         }
+
     };
 
     // OK
