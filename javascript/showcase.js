@@ -33,7 +33,7 @@ function initRouter() {
 
             $('#styles').attr('href', 'pages/' + page + '/styles.css');
 
-            setTimeout(function() { prettyPrint(); }, 100);
+            setTimeout(function() { prettyPrint(); }, 250);
         },
         '/css3-sprites': function() {
             var page = 'css3-sprites';
@@ -50,7 +50,7 @@ function initRouter() {
 
             $('#styles').attr('href', 'pages/' + page + '/styles.css');
 
-            setTimeout(function() { prettyPrint(); }, 500);
+            setTimeout(function() { prettyPrint(); }, 250);
         }
 
     };
