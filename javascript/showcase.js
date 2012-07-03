@@ -50,7 +50,7 @@ function initRouter() {
 
             $('#styles').attr('href', 'pages/' + page + '/styles.css');
 
-            setTimeout(function() { prettyPrint(); }, 250);
+            setTimeout(function() { prettyPrint(); }, 500);
         }
 
     };
